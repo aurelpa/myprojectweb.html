@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="#f7f7f7">
+
+    <!-- Container -->
+    <div align="center" style="width: 80%; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+
+        <!-- Header -->
+        <div style="background-color: #0288d1; padding: 15px; width: 100%; color: white; text-align: center;">
+            <h1>Pendaftaran Anggota Baru</h1>
+            <p style="font-size: 1rem;">Isi formulir di bawah untuk mendaftar.</p>
+        </div>
+
+        <!-- Form Pendaftaran -->
+        <h2 style="color: #0288d1;">Form Pendaftaran</h2>
+        <form action="#" method="get">
+
+            <table width="100%" cellspacing="0" cellpadding="10" border="1" style="border-collapse: collapse;">
+                <tr bgcolor="#e3f2fd">
+                    <td width="30%"><label for="fullname">Nama Lengkap:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkap Anda" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></td>
+                </tr>
+                <tr bgcolor="#f1f8e9">
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Masukkan password Anda" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></td>
+                </tr>
+                <tr bgcolor="#e3f2fd">
+                    <td><label>Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Laki-laki">
+                        <label for="male">Laki-laki</label>
+
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <tr bgcolor="#f1f8e9">
+                    <td><label>Hobi:</label></td>
+                    <td>
+                        <input type="checkbox" id="hobby1" name="hobbies" value="Membaca">
+                        <label for="hobby1">Membaca</label><br>
+
+                        <input type="checkbox" id="hobby2" name="hobbies" value="Olahraga">
+                        <label for="hobby2">Olahraga</label><br>
+
+                        <input type="checkbox" id="hobby3" name="hobbies" value="Musik">
+                        <label for="hobby3">Musik</label><br>
+                    </td>
+                </tr>
+                <tr bgcolor="#e3f2fd">
+                    <td><label for="city">Asal Kota:</label></td>
+                    <td>
+                        <select id="city" name="city" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                            <option value="">-- Pilih Kota --</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Surabaya">Surabaya</option>
+                            <option value="Bandung">Bandung</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr bgcolor="#f1f8e9">
+                    <td><label for="comments">Komentar:</label></td>
+                    <td><textarea id="comments" name="comments" rows="4" placeholder="Tuliskan komentar Anda di sini..." style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea></td>
+                </tr>
+                <tr bgcolor="#0288d1" style="color: white;">
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Kirim" style="background-color: #0288d1; color: white; padding: 12px 20px; border: none; border-radius: 5px; width: 100%; cursor: pointer;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- Langkah Pendaftaran -->
+        <h3 style="color: #0288d1;">Langkah Pendaftaran</h3>
+        <ul>
+            <li>Isi data diri lengkap di form yang disediakan.</li>
+            <li>Pilih jenis kelamin, hobi, dan asal kota yang sesuai.</li>
+            <li>Kirim form untuk menyelesaikan pendaftaran.</li>
+        </ul>
+
+        <!-- Jadwal Praktik Dokter -->
+        <h3 style="color: #0288d1;">Jadwal Praktik Dokter</h3>
+        <table width="100%" cellspacing="0" cellpadding="10" border="1" style="border-collapse: collapse;">
+            <tr bgcolor="#0288d1" style="color: white;">
+                <th>Hari</th>
+                <th>Jam Praktik</th>
+            </tr>
+            <tr bgcolor="#e3f2fd">
+                <td>Senin</td>
+                <td>08:00 - 12:00</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td>Rabu</td>
+                <td>14:00 - 18:00</td>
+            </tr>
+            <tr bgcolor="#e3f2fd">
+                <td>Jumat</td>
+                <td>09:00 - 13:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div align="center" style="background-color: #0288d1; padding: 10px; color: white;">
+        <p>&copy; 2025 Pendaftaran Online</p>
+    </div>
+
+</body>
+</html>
