@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Pasien</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SEMANTIC HEADER -->
+  <header>
+    <h1>Formulir Pendaftaran Pasien</h1>
+  </header>
+
+  <!-- SEMANTIC MAIN -->
+  <main>
+
+    <!-- FORM SECTION -->
+    <section>
+      <article>
+        <form method="POST" action="#">
+          <table>
+            <tr>
+              <td><label for="nama">Nama Lengkap</label></td>
+              <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required autofocus></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" id="email" name="email" placeholder="contoh@email.com" required></td>
+            </tr>
+            <tr>
+              <td><label for="website">Website / Blog</label></td>
+              <td><input type="url" id="website" name="website" placeholder="https://contoh.com"></td>
+            </tr>
+            <tr>
+              <td><label for="tanggal">Tanggal Janji Temu</label></td>
+              <td><input type="date" id="tanggal" name="tanggal"></td>
+            </tr>
+            <tr>
+              <td><label for="jarak">Jarak Rumah ke Kampus (km)</label></td>
+              <td>
+                <input type="range" id="jarak" name="jarak" min="0" max="50" step="5" oninput="outputJarak.value = jarak.value">
+                <output id="outputJarak">25</output> km
+              </td>
+            </tr>
+            <tr>
+              <td><label for="warna">Warna Kesukaan</label></td>
+              <td><input type="color" id="warna" name="warna"></td>
+            </tr>
+            <tr>
+              <td><label>Jenis Kelamin</label></td>
+              <td>
+                <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label><br>
+                <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="kota">Asal Kota</label></td>
+              <td>
+                <select id="kota" name="kota" required>
+                  <option value="">-- Pilih Kota --</option>
+                  <option value="Jombang">Jombang</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Malang">Malang</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="komentar">Komentar</label></td>
+              <td><textarea id="komentar" name="komentar" rows="3" placeholder="Tambahkan komentar..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align:center;">
+                <input type="submit" value="KIRIM">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </article>
+    </section>
+
+    <!-- INSTRUKSI PENDAFTARAN -->
+    <section>
+      <h2>Langkah Pendaftaran</h2>
+      <ul>
+        <li>Isi formulir dengan lengkap dan benar.</li>
+        <li>Klik tombol "KIRIM".</li>
+        <li>Tunggu konfirmasi melalui email Anda.</li>
+      </ul>
+    </section>
+
+    <!-- JADWAL DOKTER -->
+    <section>
+      <h2>Jadwal Dokter</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Jam Praktik</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin - Selasa</td>
+            <td>08:00 - 13:00</td>
+          </tr>
+          <tr>
+            <td>Rabu - Kamis</td>
+            <td>12:30 - 17:00</td>
+          </tr>
+          <tr>
+            <td>Jumat</td>
+            <td>08:30 - 11:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- SEMANTIC FOOTER -->
+  <footer>
+    <p>Kontak: (0321) xxxxxxxx |
+      <a href="https://www.arlklinik.co.id/id" target="_blank" rel="noopener noreferrer">Kunjungi Homepage arl Klinik</a>
+    </p>
+  </footer>
+
+</body>
+</html>
